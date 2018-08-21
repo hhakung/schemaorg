@@ -5458,6 +5458,9 @@
    <loc>http://health-lifesci.schema.org/</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
+   <loc>http://iot.schema.org/</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
    <loc>http://meta.schema.org/Class</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
@@ -5560,7 +5563,16 @@
    <loc>http://pending.schema.org/FMRadioChannel</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
+   <loc>http://pending.schema.org/FundingAgency</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
+   <loc>http://pending.schema.org/FundingScheme</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
    <loc>http://pending.schema.org/GeospatialGeometry</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
+   <loc>http://pending.schema.org/Grant</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
    <loc>http://pending.schema.org/HealthInsurancePlan</loc>
@@ -5602,6 +5614,9 @@
    <loc>http://pending.schema.org/MonetaryAmountDistribution</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
+   <loc>http://pending.schema.org/MonetaryGrant</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
    <loc>http://pending.schema.org/MoneyTransfer</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
@@ -5620,6 +5635,9 @@
    <loc>http://pending.schema.org/PreOrderAction</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
+   <loc>http://pending.schema.org/Project</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
    <loc>http://pending.schema.org/PublicToilet</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
@@ -5633,6 +5651,9 @@
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
    <loc>http://pending.schema.org/ReportageNewsArticle</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
+   <loc>http://pending.schema.org/ResearchProject</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
    <loc>http://pending.schema.org/ReviewNewsArticle</loc>
@@ -5813,6 +5834,12 @@
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
    <loc>http://pending.schema.org/floorLimit</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
+   <loc>http://pending.schema.org/fundedItem</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
+   <loc>http://pending.schema.org/funder</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
    <loc>http://pending.schema.org/geospatiallyContains</loc>
@@ -6089,6 +6116,9 @@
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
    <loc>http://pending.schema.org/spokenByCharacter</loc>
+   <lastmod>2017-01-19</lastmod>
+  </url>  <url>
+   <loc>http://pending.schema.org/sponsor</loc>
    <lastmod>2017-01-19</lastmod>
   </url>  <url>
    <loc>http://pending.schema.org/subjectOf</loc>

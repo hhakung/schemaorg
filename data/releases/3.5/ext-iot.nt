@@ -1,0 +1,12 @@
+<http://hhakung-212605.appspot.com/iotTestProperty> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#Property> .
+<http://hhakung-212605.appspot.com/iotTestProperty> <http://schema.org/domainIncludes> <http://hhakung-212605.appspot.com/iotTestType> .
+<http://hhakung-212605.appspot.com/iotTestProperty> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a iotTestProperty! - for testing only" .
+<http://hhakung-212605.appspot.com/iotTestProperty> <http://schema.org/isPartOf> <http://iot.hhakung-212605.appspot.com/> .
+<http://hhakung-212605.appspot.com/iotTestType> <http://www.w3.org/2000/01/rdf-schema#label> "iotTestType" .
+<http://hhakung-212605.appspot.com/iotTestProperty> <http://www.w3.org/2000/01/rdf-schema#label> "iotTestProperty" .
+<http://hhakung-212605.appspot.com/iotTestProperty> <http://schema.org/rangeIncludes> <http://schema.org/QuantitativeValue> .
+<http://hhakung-212605.appspot.com/iotTestType> <http://schema.org/isPartOf> <http://iot.hhakung-212605.appspot.com/> .
+<http://hhakung-212605.appspot.com/iotTestType> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://schema.org/Thing> .
+<http://hhakung-212605.appspot.com/iotTestType> <http://www.w3.org/2000/01/rdf-schema#comment> "A iotTestType for testing." .
+<http://hhakung-212605.appspot.com/iotTestType> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2000/01/rdf-schema#Class> .
+

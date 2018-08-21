@@ -1,0 +1,37 @@
+{
+  "@context": {
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "http://hhakung-212605.appspot.com/iotTestProperty",
+      "@type": "rdf:Property",
+      "http://schema.org/domainIncludes": {
+        "@id": "http://hhakung-212605.appspot.com/iotTestType"
+      },
+      "http://schema.org/isPartOf": {
+        "@id": "http://iot.hhakung-212605.appspot.com/"
+      },
+      "http://schema.org/rangeIncludes": {
+        "@id": "http://schema.org/QuantitativeValue"
+      },
+      "rdfs:comment": "This is a iotTestProperty! - for testing only",
+      "rdfs:label": "iotTestProperty"
+    },
+    {
+      "@id": "http://hhakung-212605.appspot.com/iotTestType",
+      "@type": "rdfs:Class",
+      "http://schema.org/isPartOf": {
+        "@id": "http://iot.hhakung-212605.appspot.com/"
+      },
+      "rdfs:comment": "A iotTestType for testing.",
+      "rdfs:label": "iotTestType",
+      "rdfs:subClassOf": {
+        "@id": "http://schema.org/Thing"
+      }
+    }
+  ],
+  "@id": "http://iot.hhakung-212605.appspot.com/#3.5"
+}

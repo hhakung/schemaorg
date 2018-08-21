@@ -1113,6 +1113,7 @@ def GetJsonLdContext(layers='core'):
         jsonldcontext = jsonldcontext.replace("},","},\n") 
         DataCache.put('JSONLDCONTEXT',jsonldcontext)
         #log.debug("DataCache: added JSONLDCONTEXT")
+        log.info("JSON-LD CONTEXT: %s" % jsonldcontext)
         return jsonldcontext
 
 

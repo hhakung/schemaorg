@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rdf:RDF
+  xmlns:schema="http://schema.org/"
+  xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+>
+  <rdf:Property rdf:about="http://hhakung-212605.appspot.com/iotTestProperty">
+    <schema:rangeIncludes rdf:resource="http://schema.org/QuantitativeValue"/>
+    <schema:domainIncludes rdf:resource="http://hhakung-212605.appspot.com/iotTestType"/>
+    <schema:isPartOf rdf:resource="http://iot.hhakung-212605.appspot.com/"/>
+    <rdfs:comment>This is a iotTestProperty! - for testing only</rdfs:comment>
+    <rdfs:label>iotTestProperty</rdfs:label>
+  </rdf:Property>
+  <rdfs:Class rdf:about="http://hhakung-212605.appspot.com/iotTestType">
+    <rdfs:comment>A iotTestType for testing.</rdfs:comment>
+    <schema:isPartOf rdf:resource="http://iot.hhakung-212605.appspot.com/"/>
+    <rdfs:subClassOf rdf:resource="http://schema.org/Thing"/>
+    <rdfs:label>iotTestType</rdfs:label>
+  </rdfs:Class>
+</rdf:RDF>

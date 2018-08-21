@@ -38,7 +38,7 @@ from apimarkdown import Markdown
 
 from sdordf2csv import sdordf2csv
 
-SCHEMA_VERSION="3.4"
+SCHEMA_VERSION="3.5"
 
 FEEDBACK_FORM_BASE_URL='https://docs.google.com/a/google.com/forms/d/1krxHlWJAO3JgvHRZV9Rugkr9VYnMdrI10xbGsWt733c/viewform?entry.1174568178&entry.41124795={0}&entry.882602760={1}'
 # {0}: term URL, {1} category of term.
@@ -47,7 +47,7 @@ sitemode = "mainsite" # whitespaced list for CSS tags,
             # e.g. "mainsite testsite" when off expected domains
             # "extensionsite" when in an extension (e.g. blue?)
 
-releaselog = { "2.0": "2015-05-13", "2.1": "2015-08-06", "2.2": "2015-11-05", "3.0": "2016-05-04", "3.1": "2016-08-09", "3.2": "2017-03-23", "3.3": "2017-08-14", "3.4": "2018-06-15" }
+releaselog = { "2.0": "2015-05-13", "2.1": "2015-08-06", "2.2": "2015-11-05", "3.0": "2016-05-04", "3.1": "2016-08-09", "3.2": "2017-03-23", "3.3": "2017-08-14", "3.4": "2018-06-15", "3.5": "2018-08-21" }
 
 silent_skip_list =  [ "favicon.ico" ] # Do nothing for now
 
@@ -1162,7 +1162,11 @@ class ShowUnit (webapp2.RequestHandler):
             return "schema.org"
         if not layers or len(layers)==0:
             return "schema.org"
-        return (getHostExt() + ".schema.org")
+        for layer in layers:
+            if layer == "iot":
+                return (getHostExt() + ".hhakung-212605.appspot.com")
+            else:
+                return (getHostExt() + ".schema.org")
 
     def emitSchemaorgHeaders(self, node, ext_mappings='', sitemode="default", sitename="schema.org", layers="core"):
         """
@@ -1452,6 +1456,7 @@ class ShowUnit (webapp2.RequestHandler):
         extlist = cleanPath( self.request.get("ext")  )# for debugging
         extlist = re.sub(ext_re, '', extlist).split(',')
         log.debug("?ext= extension list: %s " % ", ".join(extlist))
+        log.info("?ext= extension list: %s " % ", ".join(extlist))
 
         # 2. Ignore ?ext=, start with 'core' only.
         layerlist = [ "core"]
@@ -2268,13 +2273,16 @@ class ShowUnit (webapp2.RequestHandler):
         if (node in silent_skip_list):
             return False
 
+        log.info("EXT: ENABLE_HOSTED_EXTENSIONS: %s " % str(ENABLE_HOSTED_EXTENSIONS))
         if ENABLE_HOSTED_EXTENSIONS:
             layerlist = self.setupExtensionLayerlist(node) # e.g. ['core', 'bib']
         else:
             layerlist = ["core"]
 
+        log.info("EXT: layerlist: %s " % str(layerlist))
         setSiteName(self.getExtendedSiteName(layerlist)) # e.g. 'bib.schema.org', 'schema.org'
         log.debug("EXT: set sitename to %s " % getSiteName())
+        log.info("EXT: set sitename to %s " % getSiteName())
 
         if re.search( validNode_re, str(node)): #invalid node name
             self.handle404Failure(node,suggest=False)
