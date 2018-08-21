@@ -45,21 +45,27 @@ handlers:
   application_readable: True
   mime_type: text/html
 
+# The URL /docs/jsonldcontext.json.* is handled by the sdoapp.py script
 - url: /docs/jsonldcontext.json.*
   script: sdoapp.app
 
+# The URL /docs/full.*.html is handled by the sdoapp.py script
 - url: /docs/full.*.html
   script: sdoapp.app
 
+# The URL /docs/schemas.html is handled by the sdoapp.py script
 - url: /docs/schemas.html
   script: sdoapp.app
 
+# The URL /docs/developers.html is handled by the sdoapp.py script
 - url: /docs/developers.html
   script: sdoapp.app
 
+# The URL /docs/tree.json.* is handled by the sdoapp.py script
 - url: /docs/tree.json.*
   script: sdoapp.app
 
+# The URL /docs is handled by the sdoapp.py script
 - url: /docs
   static_dir: docs
 
@@ -95,6 +101,7 @@ handlers:
   upload: data/releases/(.*/.*\.ttl)
   application_readable: True
 
+# Whenever the url request comes in, associate the url with the jsonld files in the "upload" tag
 - url: /version/(.*/.*\.jsonld)
   mime_type: application/ld+json
   static_files: data/releases/\1

@@ -73,7 +73,7 @@ DISABLE_NDB_FOR_LOCALHOST = True
 WORKINGHOSTS = ["schema.org","schemaorg.appspot.com",
                 "webschemas.org","webschemas-g.appspot.com",
                 "sdo-test.appspot.com",
-                "localhost"]
+                "localhost", "hhakung-212605.appspot.com"]
 
 #INTESTHARNESS = True #Used to indicate we are being called from tests - use setInTestHarness() & getInTestHarness() to manage value
 

@@ -151,9 +151,14 @@ def rdfGetTriples(id):
 	targets = []
 	fullId = id
 
-#	log.info("rdfgetTriples(%s)" % fullId)
-	if	':' in id: #Includes full path or namespaces
+	#log.info("rdfgetTriples(%s)" % fullId)
+	#Includes full path or namespaces
+	if ':' in id:
 		fullId = id
+	elif 'iotTestType' in id:
+		fullId = "http://hhakung-212605.appspot.com/iotTestType"
+	elif 'iotTestProperty' in id:
+		fullId = "http://hhakung-212605.appspot.com/iotTestProperty"
 	else:
 		fullId = VOCAB + "/" + id
 	#log.info("rdfgetTriples(%s)" % source)

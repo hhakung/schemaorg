@@ -1,0 +1,20 @@
+<div>
+<!-- IoT Testing  -->
+
+<div resource="http://iot.hhakung-212605.appspot.com/">
+</div>
+
+<div typeof="rdfs:Class" resource="http://hhakung-212605.appspot.com/iotTestType">
+    <link property="http://schema.org/isPartOf" href="http://iot.hhakung-212605.appspot.com/" />
+    <span class="h" property="rdfs:label">iotTestType</span>
+    <span property="rdfs:comment">A iotTestType for testing.</span>
+    <span>Subclass of: <a property="rdfs:subClassOf" href="http://schema.org/Thing">Thing</a></span>
+</div>
+<div typeof="rdf:Property" resource="http://hhakung-212605.appspot.com/iotTestProperty">
+    <link property="http://schema.org/isPartOf" href="http://iot.hhakung-212605.appspot.com/" />
+    <span class="h" property="rdfs:label">iotTestProperty</span>
+    <span property="rdfs:comment">This is a iotTestProperty! - for testing only</span>
+    <span>Domain: <a property="http://schema.org/domainIncludes" href="http://hhakung-212605.appspot.com/iotTestType">iotTestType</a></span>
+    <span>Range: <a property="http://schema.org/rangeIncludes" href="http://schema.org/QuantitativeValue">QuantitativeValue</a></span>
+</div>
+</div>
